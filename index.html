@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Modern Blog Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">My<span>Blog</span></a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button id="themeBtn" class="theme-btn">🌙</button>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <p class="small-title">WELCOME TO MY BLOG</p>
+
+                <h1>
+                    Learn, Explore & 
+                    <span>Grow Together</span>
+                </h1>
+
+                <p>
+                    Discover useful articles about technology,
+                    programming, web development and lifestyle.
+                </p>
+
+                <a href="#blogs" class="hero-btn">
+                    Explore Blogs →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="code-box">
+                    <span>&lt;/&gt;</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search blogs..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blogs" class="blogs-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>MY ARTICLES</p>
+                <h2>Latest Blog Posts</h2>
+            </div>
+
+
+            <!-- Categories -->
+            <div class="categories">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="technology">
+                    Technology
+                </button>
+
+                <button class="category-btn" data-category="programming">
+                    Programming
+                </button>
+
+                <button class="category-btn" data-category="lifestyle">
+                    Lifestyle
+                </button>
+
+            </div>
+
+
+            <!-- Blog Cards -->
+            <div id="blogContainer" class="blog-grid">
+
+                <!-- Blog 1 -->
+                <article
+                    class="blog-card"
+                    data-category="technology"
+                    data-title="Future of Artificial Intelligence"
+                >
+
+                    <div class="blog-image gradient-one">
+                        🤖
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Technology</span>
+
+                        <h3>
+                            Future of Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Learn how AI is changing the world
+                            and transforming modern businesses.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>5 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="Future of Artificial Intelligence"
+                                data-content="Artificial Intelligence is rapidly changing the way we work, learn and communicate. From chatbots to autonomous systems, AI is becoming an important part of modern technology."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 2 -->
+                <article
+                    class="blog-card"
+                    data-category="programming"
+                    data-title="Learn JavaScript From Zero"
+                >
+
+                    <div class="blog-image gradient-two">
+                        💻
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Programming</span>
+
+                        <h3>
+                            Learn JavaScript From Zero
+                        </h3>
+
+                        <p>
+                            A beginner-friendly guide to start
+                            your JavaScript programming journey.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>7 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="Learn JavaScript From Zero"
+                                data-content="JavaScript is one of the most popular programming languages for web development. Start with variables, functions, arrays, objects and DOM manipulation before moving to advanced concepts."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 3 -->
+                <article
+                    class="blog-card"
+                    data-category="technology"
+                    data-title="How Websites Work"
+                >
+
+                    <div class="blog-image gradient-three">
+                        🌐
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Technology</span>
+
+                        <h3>
+                            How Websites Work
+                        </h3>
+
+                        <p>
+                            Understand the basic architecture
+                            behind modern websites.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>6 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="How Websites Work"
+                                data-content="A website normally uses HTML for structure, CSS for design and JavaScript for interaction. Modern applications can also use frontend frameworks, backend servers and databases."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 4 -->
+                <article
+                    class="blog-card"
+                    data-category="programming"
+                    data-title="Top 5 VS Code Extensions"
+                >
+
+                    <div class="blog-image gradient-four">
+                        ⚡
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Programming</span>
+
+                        <h3>
+                            Top 5 VS Code Extensions
+                        </h3>
+
+                        <p>
+                            Useful extensions that can make
+                            your development workflow faster.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>4 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="Top 5 VS Code Extensions"
+                                data-content="VS Code extensions can improve productivity. Popular categories include code formatting, Git tools, live preview, error checking and useful developer utilities."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 5 -->
+                <article
+                    class="blog-card"
+                    data-category="lifestyle"
+                    data-title="How to Stay Productive"
+                >
+
+                    <div class="blog-image gradient-five">
+                        🚀
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Lifestyle</span>
+
+                        <h3>
+                            How to Stay Productive
+                        </h3>
+
+                        <p>
+                            Simple habits that can help you
+                            improve your daily productivity.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>5 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="How to Stay Productive"
+                                data-content="Productivity is not about working all day. Set clear goals, remove distractions, take regular breaks and focus on important tasks one at a time."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 6 -->
+                <article
+                    class="blog-card"
+                    data-category="lifestyle"
+                    data-title="Importance of Learning"
+                >
+
+                    <div class="blog-image gradient-six">
+                        📚
+                    </div>
+
+                    <div class="blog-content">
+
+                        <span class="tag">Lifestyle</span>
+
+                        <h3>
+                            Importance of Continuous Learning
+                        </h3>
+
+                        <p>
+                            Why continuous learning is important
+                            for personal and professional growth.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>4 min read</span>
+
+                            <button
+                                class="read-btn"
+                                data-title="Importance of Continuous Learning"
+                                data-content="Learning new skills helps you adapt to changing technology and career opportunities. Small improvements every day can create significant long-term results."
+                            >
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <div class="container about-content">
+
+            <div class="about-icon">
+                👩‍💻
+            </div>
+
+            <div>
+
+                <p class="small-title">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    Passionate About Technology
+                </h2>
+
+                <p>
+                    Hi! I'm a web developer who loves building
+                    modern websites and learning new technologies.
+                    I created this blog to share useful knowledge
+                    with developers and technology enthusiasts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <h3>MyBlog</h3>
+
+            <p>
+                Learn. Build. Grow.
+            </p>
+
+            <p>
+                © 2026 MyBlog. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Read More Modal -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">
+                ×
+            </button>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalText"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
